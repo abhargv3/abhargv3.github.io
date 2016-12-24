@@ -4,7 +4,9 @@ img {margin-bottom: -7px}
 header{
 	position: relative;
 	height:600px;
-	background-image: url("image/bgImg");
+	background-image: url("image/bgImg.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
 	background-position: top center;
 	background-attachment: fixed;
 	z-index: -1;
@@ -13,8 +15,21 @@ header{
 
 #content{
 	height: 720px;
-	margin-top: 10px;
+	width: 72.6%;
+	text-align: center;
+	margin: auto;
 	background-color: #388E8E;
 	position: relative;
 	z-index: 1;
+}
+
+#header_title{
+	top: 50%;
+	margin-top: -50px;
+	background-position: center;
+	text-align: center;
+	margin:auto;
+	color: white;
+	font-size: 128px;
+	font-family: 'Amatic SC', cursive;
 }
