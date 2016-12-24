@@ -1,3 +1,22 @@
 body,h1 {font-family: "Montserrat", sans-serif}
 img {margin-bottom: -7px}
-.w3-row-padding img {margin-bottom: 12px}
+
+.header{
+	position: relative;
+	height:600px;
+	background-image: "https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-208853.jpg";
+	background-size: contain;
+	background-position: top center;
+	background-attachment: fixed;
+	z-index: -1;
+
+}
+
+.content{
+	height: 720px;
+	width:100px;
+	margin-top: 10px;
+	background-color: #388E8E;
+	position: relative;
+	z-index: 1;
+}
