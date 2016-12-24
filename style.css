@@ -4,28 +4,20 @@ img {margin-bottom: -7px}
 header{
 	position: relative;
 	height:600px;
+	width:80%;
 	background-image: url("image/bgImg.jpg");
-	background-size: contain;
+	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: top center;
 	background-attachment: fixed;
 	z-index: -1;
-
-}
-
-#content{
-	height: 720px;
-	width: 72.6%;
-	text-align: center;
 	margin: auto;
-	background-color: #388E8E;
-	position: relative;
-	z-index: 1;
-}
 
+}
 #header_title{
-	top: 50%;
-	margin-top: -50px;
+	position: absolute;
+	top: 40%;
+	margin-top: -40px;
 	background-position: center;
 	text-align: center;
 	margin:auto;
@@ -33,3 +25,14 @@ header{
 	font-size: 128px;
 	font-family: 'Amatic SC', cursive;
 }
+
+#content{
+	height: 720px;
+	width: 80%;
+	text-align: center;
+	margin: auto;
+	background-color: #388E8E;
+	position: relative;
+	z-index: 1;
+}
+
