@@ -2,6 +2,10 @@
 <html>
 <head>
   <title>Aditya Bhargava</title>
+  	  <!-- Latest compiled and minified AngularJavaScript and Route-->
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.js"></script>
+
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
       <!-- Latest compiled and minified CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -13,30 +17,23 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
       <link rel="stylesheet" type="text/css" href="style.css">
+      <script type="text/javascript" src="app.js"></script>
       <!--Fonts -->
       <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
       <script src="https://use.fontawesome.com/62c2b58f00.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">	
+      <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+      <!-- Meta tags-->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
-		<div>
-			<header>
-				<p id="header_title">Aditya Bhargava</p>
-			</header>
-		</div>
-		<div id="content">
-			<div id="header2">
-			<span class="avatar"><img src="https://avatars3.githubusercontent.com/u/15132963?v=3&s=460" alt="" /></span>
-			<h1>This is <strong>Aditya Bhargava</strong>, a computer engineering student at the <a href="http://illinois.edu">Univesity of Illinois at Urbana Champaign</a></h1>
-			<ul class="icons">
-				<li><a href="https://github.com/abhargv3/" title="Github" class="icon style2 fa-github"><span class="label">Github</span></a></li>
-				<li><a href="https://www.facebook.com/adityabhargava07" title="Facebook" class="icon style2 fa-facebook"><span class="label">Facebook</span></a></li>
-				<li><a href="#" class="icon style2 fa-download" title="Resume"><span class="label">Instagram</span></a></li>
-				<li><a href="https://www.linkedin.com/in/aditya-bhargava" title="LinkedIn" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
-				<li><a href="mailto:abhargv3@illinois.edu" class="icon style2 fa-envelope-o" title="Email"><span class="label">Email</span></a></li>
+<body ng-app="mySite">
+		<div id="headerWrapper" class="container-fluid bg-info" ng-controller="headerCtrl">
+			<ul class="nav nav-tabs">
+				<li ng-class="{active: isActive('/home')}"><a href="#/home">Home</a></li>
+				<li ng-class="{active: isActive('/projects')}"><a href="#/projects">Projects</a></li>
+				<li ng-class="{active: isActive('/about-me')}"><a href="#/about-me">About Me</a></li>
 			</ul>
-			</div>
 		</div>
+		<ng-view></ng-view>
 </body>
 </html>

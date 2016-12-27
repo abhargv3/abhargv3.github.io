@@ -1,3 +1,4 @@
+
 /* Reset */
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -13,7 +14,6 @@ header{
 	position: relative;
 	height:600px;
 	width:80%;
-	background-image: url("image/bgImg.jpg");
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: top center;
@@ -22,6 +22,28 @@ header{
 	margin: auto;
 
 }
+#home_header{
+	background-image: url("image/bgImg.jpg");
+}
+
+#about_header{
+	background-image: url("image/bgAbout.jpg");
+}
+
+#projects_header{
+	background-image: url("image/bgProjects.jpg");
+}
+
+#headerWrapper{
+	position: fixed;
+	background-color: #340034;
+	width: 80%;
+	top:0;
+	height:50px;
+	left:0;
+	right:0;
+}
+
 #header_title{
 	position: absolute;
 	top: 40%;
@@ -35,13 +57,13 @@ header{
 }
 
 #content{
-	height: 720px;
 	width: 80%;
 	text-align: center;
 	margin: auto;
 	background-image: url(image/bg.jpg);
 	position: relative;
 	z-index: 1;
+	background-repeat: repeat-y;
 }
 
 /* Avatar */
