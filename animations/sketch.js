@@ -1,7 +1,7 @@
 var drops = [];
 
 function setup() {
-  var canvas = createCanvas(window.innerWidth, window.innerHeight);
+  var canvas = createCanvas($(document).width(), $(document).height());
   canvas.parent("backAnimation");
   for (var i = 0; i < 500; i++) {
     drops[i] = new Drop();
