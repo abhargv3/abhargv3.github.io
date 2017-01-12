@@ -1,4 +1,5 @@
 
+//138,43,226
 function Drop() {
   this.x = random(width);
   this.y = random(-500, -50);
@@ -20,7 +21,7 @@ function Drop() {
   this.show = function() {
     var thick = map(this.z, 0, 20, 1, 3);
     strokeWeight(thick);
-    stroke(138, 43, 226);
+    stroke(160,89,167);
     line(this.x, this.y, this.x, this.y+this.len);
   }
 }
