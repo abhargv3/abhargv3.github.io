@@ -32,6 +32,10 @@ function setup() {
   canvas.parent("backAnimation");
 }
 
+function windowResized(){
+  resizeCanvas($(document).width(),$(document).height());
+}
+
 function draw() {
 
   col.r = random(100, 255);
